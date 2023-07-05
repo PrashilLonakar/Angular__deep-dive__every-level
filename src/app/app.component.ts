@@ -7,5 +7,12 @@ import { MatSidenav } from '@angular/material/sidenav';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  @ViewChild('drawer', { static: true }) drawer!: MatSidenav;
   showFiller = false;
+  showSidebar = true;
+
+  onDrawer() {
+    this.drawer.toggle();
+    this.showSidebar = !this.showSidebar;
+}
 }
