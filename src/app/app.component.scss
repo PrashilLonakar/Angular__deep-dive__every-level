@@ -11,10 +11,16 @@
   }
   
   .example-sidenav {
-    padding: 20px;
+    padding: 1.25rem;
+    width: 17.5rem;
   }
 
   .main-wrapper{
     height: 100%;
     width: 100%;
+  }
+
+  ::ng-deep{
+    .mat-drawer-content{
+    }
   }
