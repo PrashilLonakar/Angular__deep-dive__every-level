@@ -16,19 +16,19 @@ export class SidebarConstants {
         {
           id: 1,
           text: 'Component',
-          route: '/admin/post',
+          route: 'main/directives/component-directive',
           tagId: 'ComponentDirBtn',
         },
         {
           id: 2,
           text: 'Structural',
-          route: '/admin/category',
+          route: 'main/directives/structural-directive',
           tagId: 'StructuralDirBtn',
         },
         {
           id: 2,
           text: 'Attribute',
-          route: '/admin/user',
+          route: 'main/directives/attribute-directive',
           tagId: 'AttributeDirBtn',
         },
       ],
