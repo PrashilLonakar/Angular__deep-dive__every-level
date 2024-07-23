@@ -1,0 +1,35 @@
+<h3>Creating Custom Attribute Directive</h3>
+<p>
+  If you’re already familiar with Angular components and know how to create them
+  then you can easily create a custom directive where you need to replace the
+  @Component decorator with the @Directive decorator. Attribute directive aims
+  to change the color of the text whenever the point glides over it.
+</p>
+<p>
+  You’ll be surprised to know that creating your own attribute directive is
+  similar to creating the Angular component. But before this, you must
+</p>
+
+<ul class="list-group">
+  <li class="list-group-item">Create a class with @Directive</li>
+  <li class="list-group-item">
+    After creating a class, create an Attribute directive having Element Ref
+  </li>
+  <li class="list-group-item">Listen to the Hover event with</li>
+  <li class="list-group-item">HostListener</li>
+</ul>
+
+<div class="example my-3">
+  Make use of handlers, the element is referenced, and the text color is
+  changed.
+
+  <p class="text-info">
+    So below, is a text,On hovering on it, the text color changing its color, we
+    achive this using custom directive, which listening mouse event using
+    "HostListener"
+  </p>
+
+  <div class="mt-2">
+    <h1 ColorChange>Example</h1>
+  </div>
+</div>

@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-component-directive',
+  selector: 'component-directive',
   templateUrl: './component-directive.component.html',
-  styleUrls: ['./component-directive.component.scss']
+  styleUrls: ['./component-directive.component.scss'],
 })
-export class ComponentDirectiveComponent {
-
-}
+export class ComponentDirectiveComponent {}

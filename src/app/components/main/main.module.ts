@@ -9,12 +9,7 @@ import { MainComponent } from './main.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [
-    MainComponent,
-    ComponentDirectiveComponent,
-    StructuralDirectiveComponent,
-    AttributeDirectiveComponent,
-  ],
+  declarations: [MainComponent],
   imports: [CommonModule, MainRoutingModule, RouterModule],
 })
 export class MainModule {}

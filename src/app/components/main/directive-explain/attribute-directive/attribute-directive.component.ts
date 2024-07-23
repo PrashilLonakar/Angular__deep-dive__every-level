@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-attribute-directive',
+  selector: 'attribute-directive',
   templateUrl: './attribute-directive.component.html',
-  styleUrls: ['./attribute-directive.component.scss']
+  styleUrls: ['./attribute-directive.component.scss'],
 })
-export class AttributeDirectiveComponent {
-
-}
+export class AttributeDirectiveComponent {}
