@@ -5,6 +5,7 @@ import { MatTreeModule } from '@angular/material/tree';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { Router, RouterLink } from '@angular/router';
 @NgModule({
   declarations: [SidebarComponent],
   imports: [
@@ -13,6 +14,7 @@ import { MatCardModule } from '@angular/material/card';
     MatIconModule,
     MatButtonModule,
     MatCardModule,
+    RouterLink,
   ],
   exports: [SidebarComponent],
 })

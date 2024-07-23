@@ -14,11 +14,16 @@
         [treeControl]="treeControl"
         class="example-tree"
       >
-        <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle>
+        <mat-tree-node
+          class="pointer"
+          *matTreeNodeDef="let node"
+          matTreeNodeToggle
+          [routerLink]="node.route"
+        >
           {{ node.text }}
         </mat-tree-node>
         <mat-nested-tree-node *matTreeNodeDef="let node; when: hasChild">
-          <div class="mat-tree-node">
+          <div class="mat-tree-node pointer">
             <button
               mat-icon-button
               matTreeNodeToggle
