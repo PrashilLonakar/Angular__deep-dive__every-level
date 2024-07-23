@@ -1,12 +1,11 @@
-<div class="container-fluid main-wrapper">
-  <mat-drawer-container [style.margin-left]="showSidebar ? '17.5rem' : '0rem'" class="example-container" autosize>
+<div class="main-wrapper">
+  <mat-drawer-container class="example-container" autosize>
     <mat-drawer #drawer class="example-sidenav" mode="side">
       <app-sidebar></app-sidebar>
     </mat-drawer>
-  
+
     <div class="example-sidenav-content">
       <app-header (drawerEvent)="onDrawer()"></app-header>
     </div>
-  
   </mat-drawer-container>
 </div>
