@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Angular__deep-dive__every-level';
+  @ViewChild('drawer', { static: true }) drawer!: MatSidenav;
+  showFiller = false;
+  showSidebar = true;
+
+  onDrawer() {
+    this.drawer.toggle();
+    this.showSidebar = !this.showSidebar;
+}
 }
