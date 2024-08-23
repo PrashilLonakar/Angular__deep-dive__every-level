@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
+import { DarkModeService } from 'src/app/core/services/dark-mode.service';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,11 @@ import { MatSidenav } from '@angular/material/sidenav';
 })
 export class HeaderComponent {
   @Output() drawerEvent = new EventEmitter<string>();
-  isLightTheme: boolean = true;
+  isLightTheme: boolean;
+
+  constructor(private darkmodeService: DarkModeService) {
+    this.isLightTheme = this.darkmodeService.getMode();
+  }
 
   onDrawerClick(val: string) {
     this.drawerEvent.emit(val);
@@ -16,5 +21,6 @@ export class HeaderComponent {
 
   onThemeChange() {
     this.isLightTheme = !this.isLightTheme;
+    this.darkmodeService.switchMode(!this.isLightTheme);
   }
 }

@@ -1,4 +1,4 @@
-<div class="main-wrapper">
+<div [class]="isDarkModeOn ? 'main-wrapper dark-mode' : 'main-wrapper'">
   <mat-drawer-container class="example-container" autosize>
     <mat-drawer #drawer class="example-sidenav" mode="side">
       <app-sidebar></app-sidebar>
